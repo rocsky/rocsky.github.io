@@ -7,12 +7,50 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<link rel="stylesheet" href="mui.min.css">
 		<style>
-			.mui-page .mui-table-view:first-child {
+			body {
+				font-family: 'Helvetica Neue',Helvetica,sans-serif;
+				font-size: 17px;
+				line-height: 21px;
+				color: #000;
+				background-color: #efeff4;
+				-webkit-overflow-scrolling: touch;
+			}
+			a {
+				text-decoration: none;
+			}
+			.mui-table-view {
+				position: relative;
+				margin-top: 0;
+				margin-bottom: 0;
+				padding-left: 0;
+				list-style: none;
+				background-color: #fff;
+			}
+			.mui-table-view-cell {
+				position: relative;
+				overflow: hidden;
+				padding: 11px 15px;
+				-webkit-touch-callout: none;
+				border-top:1px solid #EFEFF4;
+			}
+			.mui-pull-right {
+				float: right;
+			}
+			.mui-table-view-cell>a:not(.mui-btn) {
+				position: relative;
+				display: block;
+				overflow: hidden;
+				margin: -11px -15px;
+				padding: inherit;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				color: inherit;
+			}
+			.mui-table-view:first-child {
 				margin-top: 15px;
 			}
-			.mui-page .mui-table-view:last-child {
+			mui-table-view:last-child {
 				margin-bottom: 30px;
 			}
 			.mui-table-view {
@@ -35,29 +73,23 @@
 		</style>
 	</head>
 
-	<body class="mui-page">
+	<body>
 		<div class="mui-page-content">
-				<div class="mui-scroll-wrapper">
-					<div class="mui-scroll">
-						<ul class="mui-table-view">
-							<li class="mui-table-view-cell">
-								<a>姓名:<span class="mui-pull-right">rocsky</span></a>
-							</li>
-							<li class="mui-table-view-cell">
-								<span>邮箱:<a class="mui-pull-right" href="mailto:rocsky2010@gmail.com">rocsky2010@gmail.com</a></span>
-							</li>
-						</ul>
-						
-						<ul class="mui-table-view">
-							<li class="mui-table-view-cell">
-								<span>联系我,请发邮件,谢谢.</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		
-
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a>姓名:<span class="mui-pull-right">rocsky</span></a>
+				</li>
+				<li class="mui-table-view-cell">
+					<span>邮箱:<a class="mui-pull-right" href="mailto:rocsky2010@gmail.com">rocsky2010@gmail.com</a></span>
+				</li>
+			</ul>
+			
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<span>联系我,请发邮件,谢谢.</span>
+				</li>
+			</ul>
+		</div>
 	</body>
 	
 
